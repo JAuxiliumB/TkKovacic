@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistična kmetija Kovačič</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark"
+            style="background-color: rgb(205, 45, 45); border-bottom: 7px solid rgb(116, 0, 0);">
+            <div class="container">
+                <a class="navbar-brand" href="#zacetna" onclick="showSection('zacetna')"
+                    style="color: whitesmoke; font-size: 24px;">Turistična kmetija Kovačič</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vsebinaNav"
+                    aria-controls="vsebinaNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="vsebinaNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ponudba" onclick="showSection('ponudba')">Ponudba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt" onclick="showSection('kontakt')">Kontakt/Naročila</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="zacetna">
+            <div class="container">
+                <div class="oval-box">
+                    <div class="content">
+                        <p class="text">
+                            Na idilični lokaciji oddaljeni samo 10 minut iz Maribora vas pričakuje Turistična kmetija
+                            Kovačič,
+                            kjer se tradicija prepleta z užitki. Okusite domače narezke,
+                            meso iz tunke in čudovita domača vina, kot sta Renski in Laški rizling.
+                            Pri nas lahko organizirate zaključne družbe,
+                            piknike in srečanja. Odkrijte čare našega posestva,
+                            kjer lahko stopite v svet elegantnih konj in neokrnjene narave.
+                        </p>
+                        <div class="logo">
+                            <img id="logo" src="Slike/logoTKK.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="ponudba">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h5 class="navbar-brand" href="#ponudba">PONUDBA</h5>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vsebinaNav"
+                        aria-controls="vsebinaNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="vsebinaNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vsaHrana-subsections" onclick="showHrana()">Hrana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#topli-napitki-subsections" onclick="showTopliNapitki()">Topli
+                                    napitki</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vode-subsections" onclick="showSubsection('vode')">Vode</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#brezalkoholne-pijace-subsections"
+                                    onclick="showSubsection('brezalkoholne-pijace')">Brezalkoholne pijače</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#piva-subsections" onclick="showSubsection('piva')">Piva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vina-subsections" onclick="showSubsection('vina')">Vina</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#žganice-subsections"
+                                    onclick="showSubsection('zganice')">Žgana pijača</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#penina-subsections"
+                                    onclick="showSubsection('penina')">Penina</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div id="vsaHrana-subsections" style="display: none;">
+                    <h5>Hrana</h5>
+                    <nav class="nav d-flex flex-column">
+                        <button id="button" class="nav-link p-2" href="#sirov-narezek"
+                            onclick="toggleSubsection('sirov-narezek')">Sirni
+                            narezki</button>
+                        <button id="button" class="nav-link p-2" href="#mesni-narezek"
+                            onclick="toggleSubsection('mesni-narezek')">Mesni
+                            narezki</button>
+                        <button id="button" class="nav-link p-2" href="#oblozenKruh"
+                            onclick="toggleSubsection('oblozenKruh')">Domač obložen kruh</button>
+                    </nav>
+
+                    <div id="hrana-subsections">
+                        <article id="sirov-narezek" class="hrana-subsection" style="display: none;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Cena za dve osebi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sirni narezek</td>
+                                        <td>18€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <img id="slikaNarezek" src="Slike/sirni.jpg" alt="Slika je simbolična">
+                        </article>
+
+                        <article id="mesni-narezek" class="hrana-subsection" style="display: none;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Cena za dve osebi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mesni narezek</td>
+                                        <td>18€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <img id="slikaNarezek" src="Slike/mesni.jpg" alt="Slika je simbolična">
+                        </article>
+                    </div>
+
+                    <article id="oblozenKruh" class="hrana-subsection" style="display: none;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Domač obložen kruh
+                                        <span style="font-weight: bold;">
+                                        (Domač kruh, zaseka, meso iz tunke, čebula, priloga)
+                                        </span>
+                                    </td>
+                                    <td>6€</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <img id="slikaNarezek" src="" alt="">
+                    </article>
+                </div>
+
+                <div id="topli-napitki-subsections" style="display: none;">
+                    <h5>Topli napitki</h5>
+                    <nav class="nav d-flex flex-column">
+                        <button id="button" class="nav-link p-2" href="#kakav"
+                            onclick="toggleSubsection('kakav')">Kakav</button>
+                        <button id="button" class="nav-link p-2" href="#čaji"
+                            onclick="toggleSubsection('čaji')">Čaji</button>
+                        <button id="button" class="nav-link p-2" href="#kava"
+                            onclick="toggleSubsection('kava')">Kava</button>
+                    </nav>
+
+                    <div id="pijaca-subsections">
+                        <article id="kava" class="pijaca-subsection" style="display: none;">
+                            <h5>Kava</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Espresso</td>
+                                        <td>1.30€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Podaljsan espresso</td>
+                                        <td>1.30€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Machiatto</td>
+                                        <td>1.40€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Kava z mlekom</td>
+                                        <td>1.60€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Mala bela</td>
+                                        <td>1.60€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kava.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Bela kava</td>
+                                        <td>2.00€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+
+                        <article id="čaji" class="pijaca-subsection" style="display: none;">
+                            <h5>Čaji</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/zeleni.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - zeleni</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/meta.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - meta</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kamilice.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - kamilice</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/planinski.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - planinski</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/dusica.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - materina dušica</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/ingver.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj ingver & limona</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/brusnica.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - čarobna brusnica</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/piskotek.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - praznični piškotek</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/relax.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj - relax tea</td>
+                                        <td>1.50€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/med_limona.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj z dodatkom (med, limona)</td>
+                                        <td>1.80€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/rum.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Čaj z rumom (0,02l)</td>
+                                        <td>3.00€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+
+                        <article id="kakav" class="pijaca-subsection" style="display: none;">
+                            <h5>Kakav</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kakav.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Vroč kakav</td>
+                                        <td>2.00€</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="slikaPijace" src="Slike/kakav.jpg"
+                                                alt="Slika je simbolična"></td>
+                                        <td>Hladen kakav</td>
+                                        <td>2.00€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="brezalkoholne-pijace-subsections" style="display: none;">
+                    <h5>Brezalkoholne pijače</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/cola.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Coca-Cola</td>
+                                <td>0.33l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/fanta.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Fanta</td>
+                                <td>0.33l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/tonic.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Tonic</td>
+                                <td>0.33l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/grozdni.jpg"
+                                        alt="Slika je simbolična"></td>
+                                <td>Domači grozdni sok</td>
+                                <td>1dcl</td>
+                                <td>1.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/jabi.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Domači jabolčni sok</td>
+                                <td>1dcl</td>
+                                <td>1.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/lim03.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Naravna limonada</td>
+                                <td>0.3l</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/lim05.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Naravna limonada</td>
+                                <td>0.5l</td>
+                                <td>3.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/ledenicaj.jpg"
+                                        alt="Slika je simbolična"></td>
+                                <td>Studena ledeni čaj</td>
+                                <td>0.3l</td>
+                                <td>2.50€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="vode-subsections" style="display: none;">
+                    <h5>Vode</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/gazirana.jpg" alt="Slika je simbolična"></td>
+                                <td>Romerquelle - gazirana voda</td>
+                                <td>0.33l</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/limonska.jpg" alt="Slika je simbolična"></td>
+                                <td>Romerquelle - limonska trava</td>
+                                <td>0.33l</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/radenska.jpg" alt="Slika je simbolična"></td>
+                                <td>Radenska</td>
+                                <td>1dcl</td>
+                                <td>0.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/radenska.jpg" alt="Slika je simbolična"></td>
+                                <td>Radenska</td>
+                                <td>1l</td>
+                                <td>4.00€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="piva-subsections" style="display: none;">
+                    <h5>Piva</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/lasko.jpg" alt="Slika je simbolična"></td>
+                                <td>Laško</td>
+                                <td>0.5l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/union.jpg" alt="Slika je simbolična"></td>
+                                <td>Union</td>
+                                <td>0.5l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/heiniken.jpg" alt="Slika je simbolična"></td>
+                                <td>Heiniken</td>
+                                <td>0.33l</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/radler.jpg" alt="Slika je simbolična"></td>
+                                <td>Radler</td>
+                                <td>0.5l</td>
+                                <td>2.50€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="vina-subsections" style="display: none;">
+                    <h5>Vina</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/zvrst.jpg" alt="Slika je simbolična"></td>
+                                <td>Špricer</td>
+                                <td>2dcl</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/zvrst.jpg" alt="Slika je simbolična"></td>
+                                <td>Veliki špricer</td>
+                                <td>3dcl</td>
+                                <td>3.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/zvrst.jpg" alt="Slika je simbolična"></td>
+                                <td>Carlo Frost Zvrst - suho (Laški rizling, beli Pinot, Rizvanec)</td>
+                                <td>1dcl</td>
+                                <td>1.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/zvrst.jpg" alt="Slika je simbolična"></td>
+                                <td>Carlo Frost Zvrst - suho (Laški rizling, beli Pinot, Rizvanec)</td>
+                                <td>1l</td>
+                                <td>15.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/renski.jpg" alt="Slika je simbolična"></td>
+                                <td>Carlo Frost - polsuho (Renski rizling, polsuho)</td>
+                                <td>1dcl</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/renski.jpg" alt="Slika je simbolična"></td>
+                                <td>Carlo Frost - polsuho (Renski rizling, polsuho)</td>
+                                <td>0.7l</td>
+                                <td>17.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/krasno.jpg" alt="Slika je simbolična"></td>
+                                <td>Krasno - Goriška brda - polsuho (rdeče vino)</td>
+                                <td>1dcl</td>
+                                <td>2.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/krasno.jpg" alt="Slika je simbolična"></td>
+                                <td>Krasno - Goriška brda - polsuho (rdeče vino)</td>
+                                <td>0.7l</td>
+                                <td>17.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/sauvignon.jpg" alt="Slika je simbolična"></td>
+                                <td>Sauvignon - Püklavec - suho</td>
+                                <td>0.1l</td>
+                                <td>2.20€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/sauvignon.jpg" alt="Slika je simbolična"></td>
+                                <td>Sauvignon - Püklavec - suho</td>
+                                <td>0.7l</td>
+                                <td>15.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/liter_liter.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Klubski liter/liter</td>
+                                <td></td>
+                                <td>16.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/renski.jpg" alt="Slika je simbolična"></td>
+                                <td>Klubska buteljka</td>
+                                <td></td>
+                                <td>15.00€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="penina-subsections" style="display: none;">
+                    <h5>Penina</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/penina.jpg" alt="Slika je simbolična"></td>
+                                <td>Penina Muškatni biser - Jeruzalem - suho</td>
+                                <td>0.75l</td>
+                                <td>20.00€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="žganice-subsections" style="display: none;">
+                    <h5>Žgane pijače</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Količina</th>
+                                <th scope="col">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/orehovec.jpg"
+                                        alt="Slika je simbolična"></td>
+                                <td>Orehovec</td>
+                                <td>0.03l</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="" alt="">
+                                </td>
+                                <td>Viljamovka</td>
+                                <td>0.03l</td>
+                                <td>3.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="" alt="">
+                                </td>
+                                <td>Borovničke</td>
+                                <td>0.03l</td>
+                                <td>3.00€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/dry.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Maister, London dry gin</td>
+                                <td>0.03l</td>
+                                <td>3.50€</td>
+                            </tr>
+                            <tr>
+                                <td><img id="slikaPijace" src="Slike/coko.jpg" alt="Slika je simbolična">
+                                </td>
+                                <td>Maister, čokoladni gin</td>
+                                <td>0.03l</td>
+                                <td>3.50€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <section id="kontakt">
+                <h5>Kontakt in naročila</h5>
+                <div class="container">
+                    <article class="kontakt-article">
+                        <h6>NAROČILA NAREZKOV ZA VEČJO SKUPINO LJUDI: </h6>
+                        <span style="align-items: left;">
+                            Od sobote do nedelje je možno,</span>
+                        <span style="font-weight: bold;">brez predhodnega naročila,</span>
+                        <span>dobiti mesni ali sirni narezek za največ štiri osebe.
+                            Za večje število oseb ali za druge dni
+                            pa je potrebno
+                        </span>
+                        <span style="font-weight: bold;">predhodno naročilo narezka. (VSAJ 2 DNI PREJ)</span>
+                        </span>
+                    </article>
+                    <div class="kontakt-aside">
+                        <table class="kontakt-table">
+                            <tr>
+                                <th style="font-size: 14px;">KONTAKTNE INFORMACIJE: </th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Telefonska številka</td>
+                                <td>+38670/422-859</td>
+                            </tr>
+                            <tr>
+                                <td>Email naslov</td>
+                                <td>info@kkkarlo.si</td>
+                            </tr>
+                            <tr>
+                                <td>Lokacija</td>
+                                <td>Meljski hrib 41,</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000, Maribor</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Slovenija</td>
+                            </tr>
+                        </table>
+                        <table class="odpiralniCas-table">
+                            <td>
+                            </td>
+                            <tr>
+                                <th style="border-top: 3px solid rgba(0, 0, 0, 0.500); font-size: 14px;">DELOVNI ČAS:
+                                </th>
+                                <td style="border-top: 3px solid rgba(0, 0, 0, 0.500);"></td>
+                            </tr>
+                            <tr>
+                                <th>Pon: </th>
+                                <td style="font-weight: bold">ZAPRTO</td>
+                            </tr>
+                            <tr>
+                                <td>Tor - Čet: </td>
+                                <td>15:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Pet: </td>
+                                <td>15:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sob: </td>
+                                <td>14:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <th>Ned: </th>
+                                <td>14:00 - 20:00</td>
+                            </tr>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <footer>
+            <div class="footer-container">
+
+                <div class="kontakt-footer">
+                    <h5>Najdete nas tudi na naših socialnih omrežjih: </h5>
+
+                    <table class="kontakt-table">
+                        <tr>
+                            <td>
+                                <img id="slikaKontakti" src="Slike/FbIcona.png" alt="">
+                                <p>Povezava do Facebook profila:
+                                    <a style="background-color: slategray;"
+                                        href="https://www.facebook.com/profile.php?id=100070773916053"
+                                        target="_blank">Facebook</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="slikaKontakti" src="Slike/IgLogo.jpg" alt="">
+                                <p>Povezava do Instagram profila:
+                                    <a style="background-color: slategray;"
+                                        href="https://www.instagram.com/turisticna_kmetija_kovacic?igsh=OHNjNHh0eHN4cWZh"
+                                        target="_blank">Instagram</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ponudba-footer">
+                    <span>
+                        V ceni je zajet DDV, hrana 9,5%, pijača 22%.
+                        Velja od 01. 04. 2024. Kmetija Kovačič, Meljski
+                        hrib 41, 2000 Maribor. ID za DDV S135243376.
+                        Cene so v evrih in preračunane po paritetnem
+                        tečaju. Za alergene izdelkov se posvetujte z
+                        natakarjem.
+                        <p></p>
+                        <p>© Turistična kmetija Kovačič, vse pravice pridržane.</p>
+                    </span>
+                </div>
+
+                <button id="backButton" class="btn back-btn" onclick="showHomepage()">Nazaj
+                    na začetno stran</button>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <script src="script.js"></script>
+
+</body>
+
+</html>
