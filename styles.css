@@ -176,25 +176,25 @@
     
     /* začetni oval box */
     .oval-box {
-        width: 500px;
-        height: 280px;
+        width: 315px;
+        height: 230px;
         background-color: rgba(255, 255, 255, 0.677);
         border-radius: 50%;
         text-align: center;
-        line-height: 15px;
+        line-height: 16px;
         position: fixed;
         top: 53%;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 5px 5px 80px rgba(0, 0, 0, 0.622);
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
     
     .logo {
-        margin-bottom: 40px;
-        margin-right: 40px;
+        margin-bottom: 30px;
+        margin-right: 30px;
     }
     
     .content {
@@ -206,9 +206,9 @@
     .text {
         color: #333;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 25px;
+        font-size: 14px;
         position: absolute;
-        bottom: 40%;
+        bottom: 30%;
     }
     
     /* Shadow efekt */
