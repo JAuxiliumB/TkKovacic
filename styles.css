@@ -176,8 +176,8 @@
     
     /* začetni oval box */
     .oval-box {
-        width: 270px;
-        height: 185px;
+        width: 300px;
+        height: 210px;
         background-color: rgba(255, 255, 255, 0.677);
         border-radius: 50%;
         text-align: center;
@@ -206,7 +206,7 @@
     .text {
         color: #333;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         position: absolute;
         bottom: 30%;
     }
