@@ -176,8 +176,8 @@
     
     /* začetni oval box */
     .oval-box {
-        width: 375px;
-        height: 260px;
+        width: 418px;
+        height: 360px;
         background-color: rgba(255, 255, 255, 0.677);
         border-radius: 50%;
         text-align: center;
