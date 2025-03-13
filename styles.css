@@ -1,4 +1,4 @@
-    /*Tipografija*/
+/*Tipografija*/
     .navbar-nav,
     .nav-link {
         color: black;
@@ -176,8 +176,8 @@
     
     /* začetni oval box */
     .oval-box {
-        width: 435px;
-        height: 330px;
+        width: 650px;
+        height: 480px;
         background-color: rgba(255, 255, 255, 0.677);
         border-radius: 50%;
         text-align: center;
@@ -206,7 +206,7 @@
     .text {
         color: #333;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
+        font-size: 13px;
         position: absolute;
         bottom: 30%;
     }
