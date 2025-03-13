@@ -176,8 +176,8 @@
     
     /* začetni oval box */
     .oval-box {
-        width: 650px;
-        height: 480px;
+        width: 520px;
+        height: 350px;
         background-color: rgba(255, 255, 255, 0.677);
         border-radius: 50%;
         text-align: center;
@@ -188,7 +188,7 @@
         transform: translate(-50%, -50%);
         box-shadow: 5px 5px 80px rgba(0, 0, 0, 0.622);
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
     }
     
@@ -206,7 +206,7 @@
     .text {
         color: #333;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 13px;
+        font-size: 21px;
         position: absolute;
         bottom: 30%;
     }
