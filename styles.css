@@ -1,0 +1,231 @@
+/*Tipografija*/
+    .navbar-nav,
+    .nav-link {
+        color: black;
+        text-align: left;
+    }
+    
+    h2 {
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    h4 {
+        text-align: left;
+    }
+    
+    h5 {
+        margin: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    h6 {
+        font-weight: bold;
+        border-bottom: double 4px black;
+        padding: 6px;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightgrey;
+        text-align: left;
+    }
+    
+    /* Main */
+    main {
+        border: 7px solid rgb(116, 0, 0);
+    }
+    
+    section {
+        padding: 10px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+    /* Footer */
+    .footer-container {
+        margin: 0.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .kontakt-aside {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 8px;
+        background-color: rgba(245, 245, 245, 0.44);
+    }
+    
+    .kontakt-article {
+        padding: 10px;
+        border: double 4px;
+        margin-top: 30px;
+        text-align: left;
+        font-style: italic;
+    }
+    
+    .kontakt-footer {
+        display: flex;
+        justify-content: center;
+        border-collapse: collapse;
+        font-style: italic;
+        font-size: 15px;
+    }
+    
+    .ponudba-footer {
+        display: none;
+        font-style: italic;
+        font-size: 12px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #ponudba:target .ponudba-footer {
+        display: block;
+    }
+    
+    /* Slike */
+    #slikaNarezek {
+        max-width: 800px;
+        max-height: 250px;
+    }
+    
+    #slikaPijace {
+        max-width: 90px;
+        max-height: 90px;
+    }
+    
+    #slikaKontakti {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    #logo {
+        max-width: 180px;
+        max-height: 160px;
+        margin-left: 3px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        margin-top: 1px;
+        border-radius: 1px;
+    }
+    
+    #zacetna {
+        position: relative;
+        background-image: url('Slike/zacetna.jpg');
+    }
+    
+    /* Gumbi */
+    #button {
+        text-align: left;
+        background-color: rgb(192, 188, 133);
+        color: black;
+        padding: 1px 1px;
+        margin-right: 5px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+    }
+    
+    .back-btn {
+        background-color: rgba(0, 0, 0, 0.468);
+        border-color: rgba(0, 0, 0, 0.468);
+        color: rgba(255, 255, 255, 0.756);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+#button, .back-btn {
+    transition: transform 0.2s ease-in-out;
+}
+
+#button:hover, .back-btn:hover {
+    transform: scale(1.1);
+}
+    
+    /* Tabele */
+    .table a, 
+    .kontakt-table a {
+        text-align: left;
+        color: black;
+    
+    }
+    
+    .kontakt-table a:hover {
+        color: white;
+    }
+    
+    .kontakt-table, 
+    .odpiralniCas-table {
+        margin: 4px;
+        border-collapse: collapse;
+        width: 98%;
+    }
+    
+    .odpiralniCas-table th, 
+    .odpiralniCas-table td, 
+    .kontakt-table th, 
+    .kontakt-table td {
+        padding: 12px;
+        text-align: left;
+        border: none;    
+    }
+    
+    /* začetni oval box */
+    .oval-box {
+        width: 375px;
+        height: 380px;
+        background-color: rgba(255, 255, 255, 0.677);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 14px;
+        position: fixed;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 5px 80px rgba(0, 0, 0, 0.622);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text {
+        color: #333;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        position: absolute;
+        bottom: 30%;
+    }
+    
+    /* Shadow efekt */
+    #zacetna,
+    #button,
+    .back-btn,
+    .kontakt-article,
+    .kontakt-aside,
+    .ponudba-footer {
+        box-shadow: 5px 5px 40px rgb(90, 90, 90);
+    }
+
+
